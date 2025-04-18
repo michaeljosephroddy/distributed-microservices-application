@@ -1,0 +1,25 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        # ↓ drop the git: stanza entirely
+        # git:
+        #   uri: file:/home/michaelroddy/repos/distributed-microservices-application/config
+        #   default-label: main
+        #   clone-on-start: true
+        #   force-pull: true
+
+        # add this native: block
+        native:
+          search-locations: file:/home/michaelroddy/repos/distributed-microservices-application/config
+
+logging:
+  level:
+    org.springframework.cloud: DEBUG
+    org.springframework.boot: DEBUG

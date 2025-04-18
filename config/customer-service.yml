@@ -1,0 +1,59 @@
+spring:
+  application:
+    name: customer-service
+  datasource:
+    url: jdbc:mariadb://52.16.31.218:3306/onlinestore?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: demouser
+    password: demouserpassword
+    driver-class-name: org.mariadb.jdbc.Driver
+    platform: mariadb
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+    hibernate:
+      ddl-auto: update
+    # Zipkin Configuration for Micrometer Tracing
+  management:
+    tracing:
+      enabled: true
+      zipkin:
+        tracing:
+          endpoint: http://localhost:9411/api/v2/spans # Zipkin server URL
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      customerServiceCB:
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+  retry:
+    instances:
+      customerServiceRetry:
+        maxAttempts: 3
+        waitDuration: 2s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, prometheus
+  endpoint:
+    prometheus:
+      enabled: true
+    health:
+      show-details: always
+
+logging:
+  level:
+    io.micrometer.tracing: DEBUG
+    org.springframework.cloud.sleuth: DEBUG

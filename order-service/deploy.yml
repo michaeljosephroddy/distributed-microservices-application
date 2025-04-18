@@ -1,0 +1,23 @@
+---
+- name: Deploy custom Docker container on EC2
+  hosts: ec2
+  become: yes
+  tasks:
+    - name: Pull custom Docker image
+      docker_image:
+        name: michaelroddy04/online-store-service
+        source: pull
+
+    - name: Stop and remove existing container if running
+      docker_container:
+        name: online-store-service
+        state: absent
+
+    - name: Run new container
+      docker_container:
+        name: online-store-service
+        image: michaelroddy04/online-store-service
+        state: started
+        restart_policy: always
+        ports:
+          - "8080:8080"

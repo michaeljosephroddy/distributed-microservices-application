@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: order-service
+  config:
+    import: optional:configserver:http://localhost:8888
+  profiles:
+    active: test
+# Optional, for fallback logging if config server fails
+logging:
+  level:
+    root: INFO
+
+server:
+  port: 8081
