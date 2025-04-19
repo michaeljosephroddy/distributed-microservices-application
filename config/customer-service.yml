@@ -2,7 +2,7 @@ spring:
   application:
     name: customer-service
   datasource:
-    url: jdbc:mariadb://52.16.31.218:3306/onlinestore?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mariadb://34.249.200.45:3306/onlinestore?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: demouser
     password: demouserpassword
     driver-class-name: org.mariadb.jdbc.Driver
