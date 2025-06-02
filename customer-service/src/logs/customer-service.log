@@ -5719,3 +5719,671 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 2025-04-18 21:26:53 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 2025-04-18 21:26:53 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
 2025-04-18 21:26:53 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-20 11:24:42 traceId= spanId= INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.customer_service.CustomerRepositoryIntegrationTest]: CustomerRepositoryIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-04-20 11:24:42 traceId= spanId= INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.customer_service.CustomerServiceApplication for test class com.example.customer_service.CustomerRepositoryIntegrationTest
+2025-04-20 11:24:43 traceId= spanId= INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-04-20 11:24:46 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - Starting CustomerRepositoryIntegrationTest using Java 21.0.6 with PID 83170 (started by michaelroddy in /home/michaelroddy/repos/distributed-microservices-application/customer-service)
+2025-04-20 11:24:46 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - The following 1 profile is active: "test"
+2025-04-20 11:24:46 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:24:46 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-04-20 11:24:46 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:24:46 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[test], label=null, version=null, state=null
+2025-04-20 11:24:49 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 11:24:49 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 319 ms. Found 1 JPA repository interface.
+2025-04-20 11:24:50 traceId= spanId= INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=beb5c131-afc8-3bd8-8d3e-4161047edfe4
+2025-04-20 11:24:51 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-20 11:24:51 traceId= spanId= INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-04-20 11:24:51 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-20 11:24:52 traceId= spanId= INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 11:24:52 traceId= spanId= INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-20 11:24:52 traceId= spanId= INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-20 11:24:52 traceId= spanId= INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 11:24:52 traceId= spanId= WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-04-20 11:24:52 traceId= spanId= WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:24:52 traceId= spanId= INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20 11:24:53 traceId= spanId= INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 11:24:53 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:24:54 traceId= spanId= INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-20 11:24:56 traceId= spanId= WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:24:59 traceId= spanId= INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-20 11:24:59 traceId= spanId= INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-04-20 11:24:59 traceId= spanId= WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 11:24:59 traceId= spanId= INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-04-20 11:24:59 traceId= spanId= INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-20 11:24:59 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-20 11:24:59 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:24:59 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-04-20 11:24:59 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-04-20 11:24:59 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-04-20 11:24:59 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-04-20 11:24:59 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-04-20 11:24:59 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-04-20 11:24:59 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-04-20 11:25:00 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-04-20 11:25:00 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-04-20 11:25:00 traceId= spanId= INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 11:25:00 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1745144700174 with initial instances count: 2
+2025-04-20 11:25:00 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-04-20 11:25:00 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144700188, current=UP, previous=STARTING]
+2025-04-20 11:25:00 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:00 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - Started CustomerRepositoryIntegrationTest in 16.738 seconds (process running for 19.839)
+2025-04-20 11:25:00 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:01 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2025-04-20 11:25:01 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144701111, current=DOWN, previous=UP]
+2025-04-20 11:25:01 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:01 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:01 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:01 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-20 11:25:01 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-20 11:25:01 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-20 11:25:04 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-04-20 11:25:04 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
+2025-04-20 11:25:04 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-20 11:25:04 traceId= spanId= INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-04-20 11:25:04 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - Starting CustomerRepositoryIntegrationTest using Java 21.0.6 with PID 83170 (started by michaelroddy in /home/michaelroddy/repos/distributed-microservices-application/customer-service)
+2025-04-20 11:25:04 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - The following 1 profile is active: "test"
+2025-04-20 11:25:04 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:04 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-04-20 11:25:04 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:04 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[test], label=null, version=null, state=null
+2025-04-20 11:25:04 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 11:25:04 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2025-04-20 11:25:05 traceId= spanId= INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=beb5c131-afc8-3bd8-8d3e-4161047edfe4
+2025-04-20 11:25:05 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-04-20 11:25:05 traceId= spanId= INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-04-20 11:25:05 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-04-20 11:25:05 traceId= spanId= INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 11:25:05 traceId= spanId= INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-20 11:25:05 traceId= spanId= INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 11:25:05 traceId= spanId= WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-04-20 11:25:05 traceId= spanId= WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:25:05 traceId= spanId= INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20 11:25:05 traceId= spanId= INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 11:25:05 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:06 traceId= spanId= WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-04-20 11:25:07 traceId= spanId= WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-20 11:25:07 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-04-20 11:25:07 traceId= spanId= INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1745144707526 with initial instances count: 2
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144707537, current=UP, previous=STARTING]
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:07 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - Started CustomerRepositoryIntegrationTest in 3.379 seconds (process running for 27.182)
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144707605, current=DOWN, previous=UP]
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:07 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-04-20 11:25:07 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
+2025-04-20 11:25:07 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-04-20 11:25:07 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - Starting CustomerRepositoryIntegrationTest using Java 21.0.6 with PID 83170 (started by michaelroddy in /home/michaelroddy/repos/distributed-microservices-application/customer-service)
+2025-04-20 11:25:07 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - The following 1 profile is active: "test"
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:07 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[test], label=null, version=null, state=null
+2025-04-20 11:25:08 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 11:25:08 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-04-20 11:25:08 traceId= spanId= INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=beb5c131-afc8-3bd8-8d3e-4161047edfe4
+2025-04-20 11:25:08 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-04-20 11:25:08 traceId= spanId= INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+2025-04-20 11:25:08 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-04-20 11:25:08 traceId= spanId= INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 11:25:08 traceId= spanId= INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-20 11:25:08 traceId= spanId= INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 11:25:08 traceId= spanId= WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-04-20 11:25:08 traceId= spanId= WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:25:08 traceId= spanId= INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20 11:25:08 traceId= spanId= INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 11:25:08 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:09 traceId= spanId= WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:25:10 traceId= spanId= INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-20 11:25:10 traceId= spanId= INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-04-20 11:25:10 traceId= spanId= WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 11:25:10 traceId= spanId= INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-04-20 11:25:10 traceId= spanId= INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-20 11:25:10 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-04-20 11:25:10 traceId= spanId= INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1745144710286 with initial instances count: 2
+2025-04-20 11:25:10 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144710306, current=UP, previous=STARTING]
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:10 traceId= spanId= INFO  c.e.c.CustomerRepositoryIntegrationTest - Started CustomerRepositoryIntegrationTest in 2.685 seconds (process running for 29.945)
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:10 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144710370, current=DOWN, previous=UP]
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:10 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:10 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-04-20 11:25:10 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
+2025-04-20 11:25:10 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Fetching customers sorted by creation date in asc order
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Retrieved 2 customers sorted in asc order
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Entering createCustomer method with customer: Customer [toString()=com.example.customer_service.model.Customer@124c2028]
+2025-04-20 11:25:11 traceId= spanId= ERROR c.e.c.service.CustomerService - Customer name is null or empty
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Entering createCustomer method with customer: Customer [toString()=com.example.customer_service.model.Customer@1114bfcd]
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Customer created successfully: Customer [toString()=com.example.customer_service.model.Customer@2c7d8547]
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@50373438]
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Fetching customers sorted by creation date in desc order
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Retrieved 2 customers sorted in desc order
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Fetching customers sorted by creation date in invalid order
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Retrieved 1 customers sorted in invalid order
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Fetching customer with ID: 999
+2025-04-20 11:25:11 traceId= spanId= ERROR c.e.c.service.CustomerService - Customer not found with ID: 999
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Entering createCustomer method with customer: Customer [toString()=com.example.customer_service.model.Customer@334b4b6f]
+2025-04-20 11:25:11 traceId= spanId= ERROR c.e.c.service.CustomerService - Customer name is null or empty
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Fetching all customers
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Retrieved 2 customers
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.service.CustomerService - Entering createCustomer method with customer: null
+2025-04-20 11:25:11 traceId= spanId= ERROR c.e.c.service.CustomerService - Customer name is null or empty
+2025-04-20 11:25:11 traceId= spanId= INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.customer_service.CustomerControllerAcceptanceTest]: CustomerControllerAcceptanceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-04-20 11:25:11 traceId= spanId= INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.customer_service.CustomerServiceApplication for test class com.example.customer_service.CustomerControllerAcceptanceTest
+2025-04-20 11:25:11 traceId= spanId= INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.CustomerControllerAcceptanceTest - Starting CustomerControllerAcceptanceTest using Java 21.0.6 with PID 83170 (started by michaelroddy in /home/michaelroddy/repos/distributed-microservices-application/customer-service)
+2025-04-20 11:25:11 traceId= spanId= INFO  c.e.c.CustomerControllerAcceptanceTest - The following 1 profile is active: "test"
+2025-04-20 11:25:11 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:11 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-04-20 11:25:11 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:11 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[test], label=null, version=null, state=null
+2025-04-20 11:25:12 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 11:25:12 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-04-20 11:25:12 traceId= spanId= INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=989ce054-9e9d-3a67-8c66-77b34b0d7383
+2025-04-20 11:25:13 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-04-20 11:25:13 traceId= spanId= INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:testdb user=SA
+2025-04-20 11:25:13 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-04-20 11:25:13 traceId= spanId= INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 11:25:13 traceId= spanId= INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-20 11:25:13 traceId= spanId= INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 11:25:13 traceId= spanId= WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-04-20 11:25:13 traceId= spanId= WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:25:13 traceId= spanId= INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20 11:25:13 traceId= spanId= INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 11:25:13 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:14 traceId= spanId= WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:25:16 traceId= spanId= INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-20 11:25:16 traceId= spanId= INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-20 11:25:16 traceId= spanId= INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-20 11:25:16 traceId= spanId= INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-04-20 11:25:16 traceId= spanId= INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 39 ms
+2025-04-20 11:25:16 traceId= spanId= INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-04-20 11:25:17 traceId= spanId= WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 11:25:17 traceId= spanId= INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-20 11:25:17 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-04-20 11:25:17 traceId= spanId= INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1745144717243 with initial instances count: 2
+2025-04-20 11:25:17 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144717259, current=UP, previous=STARTING]
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:17 traceId= spanId= INFO  c.e.c.CustomerControllerAcceptanceTest - Started CustomerControllerAcceptanceTest in 6.021 seconds (process running for 36.901)
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:17 traceId=6804cb8d41e7d83480d86c101fd4b819 spanId=80d86c101fd4b819 INFO  c.e.c.service.CustomerService - Entering createCustomer method with customer: Customer [toString()=com.example.customer_service.model.Customer@249f050f]
+2025-04-20 11:25:17 traceId=6804cb8d41e7d83480d86c101fd4b819 spanId=80d86c101fd4b819 INFO  c.e.c.service.CustomerService - Customer created successfully: Customer [toString()=com.example.customer_service.model.Customer@249f050f]
+2025-04-20 11:25:17 traceId=6804cb8d8ebbb860fde394f542a6d340 spanId=fde394f542a6d340 INFO  c.e.c.service.CustomerService - Fetching customer with ID: 5
+2025-04-20 11:25:17 traceId=6804cb8d8ebbb860fde394f542a6d340 spanId=fde394f542a6d340 INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@4f499794]
+2025-04-20 11:25:17 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144717655, current=DOWN, previous=UP]
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:17 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:17 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:17 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-04-20 11:25:17 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-20 11:25:20 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-04-20 11:25:20 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
+2025-04-20 11:25:20 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-20 11:25:20 traceId= spanId= INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-04-20 11:25:20 traceId= spanId= INFO  c.e.c.CustomerControllerAcceptanceTest - Starting CustomerControllerAcceptanceTest using Java 21.0.6 with PID 83170 (started by michaelroddy in /home/michaelroddy/repos/distributed-microservices-application/customer-service)
+2025-04-20 11:25:20 traceId= spanId= INFO  c.e.c.CustomerControllerAcceptanceTest - The following 1 profile is active: "test"
+2025-04-20 11:25:20 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:20 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-04-20 11:25:20 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:20 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[test], label=null, version=null, state=null
+2025-04-20 11:25:21 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 11:25:21 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-04-20 11:25:21 traceId= spanId= INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=989ce054-9e9d-3a67-8c66-77b34b0d7383
+2025-04-20 11:25:21 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-04-20 11:25:21 traceId= spanId= INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:testdb user=SA
+2025-04-20 11:25:21 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-04-20 11:25:21 traceId= spanId= INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 11:25:21 traceId= spanId= INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-20 11:25:21 traceId= spanId= INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 11:25:21 traceId= spanId= WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-04-20 11:25:21 traceId= spanId= WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:25:21 traceId= spanId= INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20 11:25:21 traceId= spanId= INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 11:25:21 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:22 traceId= spanId= WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 21 ms
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-04-20 11:25:23 traceId= spanId= WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-20 11:25:23 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-04-20 11:25:23 traceId= spanId= INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1745144723513 with initial instances count: 2
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144723527, current=UP, previous=STARTING]
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:23 traceId= spanId= INFO  c.e.c.CustomerControllerAcceptanceTest - Started CustomerControllerAcceptanceTest in 2.847 seconds (process running for 43.171)
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:23 traceId=6804cb93c61ad7cf7699bb883c1322f9 spanId=7699bb883c1322f9 INFO  c.e.c.service.CustomerService - Entering createCustomer method with customer: Customer [toString()=com.example.customer_service.model.Customer@266dd512]
+2025-04-20 11:25:23 traceId=6804cb93c61ad7cf7699bb883c1322f9 spanId=7699bb883c1322f9 INFO  c.e.c.service.CustomerService - Customer created successfully: Customer [toString()=com.example.customer_service.model.Customer@266dd512]
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144723602, current=DOWN, previous=UP]
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:23 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-04-20 11:25:23 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
+2025-04-20 11:25:23 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.customer_service.CustomerServiceIntegrationTest]: CustomerServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.customer_service.CustomerServiceApplication for test class com.example.customer_service.CustomerServiceIntegrationTest
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-04-20 11:25:23 traceId= spanId= INFO  c.e.c.CustomerServiceIntegrationTest - Starting CustomerServiceIntegrationTest using Java 21.0.6 with PID 83170 (started by michaelroddy in /home/michaelroddy/repos/distributed-microservices-application/customer-service)
+2025-04-20 11:25:23 traceId= spanId= INFO  c.e.c.CustomerServiceIntegrationTest - The following 1 profile is active: "test"
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:23 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[test], label=null, version=null, state=null
+2025-04-20 11:25:24 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 11:25:24 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-04-20 11:25:24 traceId= spanId= INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=beb5c131-afc8-3bd8-8d3e-4161047edfe4
+2025-04-20 11:25:24 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-04-20 11:25:24 traceId= spanId= INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:testdb user=SA
+2025-04-20 11:25:24 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-04-20 11:25:24 traceId= spanId= INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 11:25:24 traceId= spanId= INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-20 11:25:24 traceId= spanId= INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 11:25:24 traceId= spanId= WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-04-20 11:25:24 traceId= spanId= WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:25:24 traceId= spanId= INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20 11:25:24 traceId= spanId= INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 11:25:24 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:24 traceId= spanId= WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:25:25 traceId= spanId= INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-20 11:25:25 traceId= spanId= INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-04-20 11:25:25 traceId= spanId= WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 11:25:25 traceId= spanId= INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-04-20 11:25:25 traceId= spanId= INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-20 11:25:25 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-04-20 11:25:25 traceId= spanId= INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 11:25:25 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1745144725991 with initial instances count: 2
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144726002, current=UP, previous=STARTING]
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:26 traceId= spanId= INFO  c.e.c.CustomerServiceIntegrationTest - Started CustomerServiceIntegrationTest in 2.317 seconds (process running for 45.635)
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:26 traceId= spanId= INFO  c.e.c.service.CustomerService - Entering createCustomer method with customer: Customer [toString()=com.example.customer_service.model.Customer@78cd03b5]
+2025-04-20 11:25:26 traceId= spanId= INFO  c.e.c.service.CustomerService - Customer created successfully: Customer [toString()=com.example.customer_service.model.Customer@78cd03b5]
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144726056, current=DOWN, previous=UP]
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:26 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-04-20 11:25:26 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
+2025-04-20 11:25:26 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-04-20 11:25:26 traceId= spanId= INFO  c.e.c.CustomerServiceIntegrationTest - Starting CustomerServiceIntegrationTest using Java 21.0.6 with PID 83170 (started by michaelroddy in /home/michaelroddy/repos/distributed-microservices-application/customer-service)
+2025-04-20 11:25:26 traceId= spanId= INFO  c.e.c.CustomerServiceIntegrationTest - The following 1 profile is active: "test"
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[test], label=null, version=null, state=null
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=beb5c131-afc8-3bd8-8d3e-4161047edfe4
+2025-04-20 11:25:26 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2025-04-20 11:25:26 traceId= spanId= INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:testdb user=SA
+2025-04-20 11:25:26 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2025-04-20 11:25:26 traceId= spanId= INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 11:25:26 traceId= spanId= INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 11:25:26 traceId= spanId= WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-04-20 11:25:26 traceId= spanId= WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:25:26 traceId= spanId= INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20 11:25:26 traceId= spanId= INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 11:25:26 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:27 traceId= spanId= WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:25:28 traceId= spanId= INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-20 11:25:28 traceId= spanId= INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-04-20 11:25:28 traceId= spanId= WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 11:25:28 traceId= spanId= INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-04-20 11:25:28 traceId= spanId= INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-20 11:25:28 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-04-20 11:25:28 traceId= spanId= INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1745144728637 with initial instances count: 2
+2025-04-20 11:25:28 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144728656, current=UP, previous=STARTING]
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:28 traceId= spanId= INFO  c.e.c.CustomerServiceIntegrationTest - Started CustomerServiceIntegrationTest in 2.586 seconds (process running for 48.292)
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:28 traceId= spanId= INFO  c.e.c.service.CustomerService - Entering createCustomer method with customer: Customer [toString()=com.example.customer_service.model.Customer@54c3fce8]
+2025-04-20 11:25:28 traceId= spanId= INFO  c.e.c.service.CustomerService - Customer created successfully: Customer [toString()=com.example.customer_service.model.Customer@54c3fce8]
+2025-04-20 11:25:28 traceId= spanId= INFO  c.e.c.service.CustomerService - Fetching customer with ID: 8
+2025-04-20 11:25:28 traceId= spanId= INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@1ec1ec8c]
+2025-04-20 11:25:28 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144728712, current=DOWN, previous=UP]
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:28 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:28 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2025-04-20 11:25:28 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
+2025-04-20 11:25:28 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-20 11:25:33 traceId= spanId= INFO  c.e.c.CustomerServiceApplication - Starting CustomerServiceApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 84027 (/home/michaelroddy/repos/distributed-microservices-application/customer-service/target/customer-service-0.0.1-SNAPSHOT.jar started by michaelroddy in /home/michaelroddy/repos/distributed-microservices-application/customer-service)
+2025-04-20 11:25:33 traceId= spanId= INFO  c.e.c.CustomerServiceApplication - The following 1 profile is active: "test"
+2025-04-20 11:25:33 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:33 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-04-20 11:25:33 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-04-20 11:25:33 traceId= spanId= INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=customer-service, profiles=[test], label=null, version=null, state=null
+2025-04-20 11:25:35 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 11:25:36 traceId= spanId= INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 220 ms. Found 1 JPA repository interface.
+2025-04-20 11:25:36 traceId= spanId= INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7c1d32b6-af0f-3cc3-bcd6-500a97332c46
+2025-04-20 11:25:38 traceId= spanId= INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-20 11:25:38 traceId= spanId= INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-20 11:25:38 traceId= spanId= INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-20 11:25:38 traceId= spanId= INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-20 11:25:38 traceId= spanId= INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-20 11:25:38 traceId= spanId= INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5107 ms
+2025-04-20 11:25:40 traceId= spanId= INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 11:25:40 traceId= spanId= INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-20 11:25:40 traceId= spanId= INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-20 11:25:41 traceId= spanId= INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 11:25:41 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-20 11:25:41 traceId= spanId= INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3e79473d
+2025-04-20 11:25:41 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-20 11:25:41 traceId= spanId= WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:25:41 traceId= spanId= INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.5.25
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20 11:25:42 traceId= spanId= INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 11:25:42 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 11:25:43 traceId= spanId= INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-20 11:25:45 traceId= spanId= WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:25:47 traceId= spanId= INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-04-20 11:25:48 traceId= spanId= WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 11:25:48 traceId= spanId= INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-04-20 11:25:48 traceId= spanId= INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-20 11:25:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-04-20 11:25:48 traceId= spanId= INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1745144748488 with initial instances count: 2
+2025-04-20 11:25:48 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745144748505, current=UP, previous=STARTING]
+2025-04-20 11:25:48 traceId= spanId= INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 11:25:48 traceId= spanId= INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-20 11:25:48 traceId= spanId= INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-04-20 11:25:48 traceId= spanId= INFO  c.e.c.CustomerServiceApplication - Started CustomerServiceApplication in 17.049 seconds (process running for 18.243)
+2025-04-20 11:25:48 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 11:26:49 traceId= spanId= WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-04-20 11:26:49 traceId= spanId= WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1] failed: Connection refused)
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender.postSpans(ZipkinRestTemplateSender.java:50)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41)
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:9411 [localhost/127.0.0.1] failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 9 common frames omitted
+2025-04-20 11:27:00 traceId= spanId= INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-20 11:27:00 traceId= spanId= INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-20 11:27:00 traceId= spanId= INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-04-20 11:27:00 traceId=6804cbf4b5a0db17436cdc0ee7420103 spanId=436cdc0ee7420103 INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 11:27:00 traceId=6804cbf4b5a0db17436cdc0ee7420103 spanId=436cdc0ee7420103 INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@71a0e736]
+2025-04-20 11:27:18 traceId=6804cc068f8cf5cbdbf8da50fb6026b0 spanId=dbf8da50fb6026b0 INFO  c.e.c.service.CustomerService - Fetching all customers
+2025-04-20 11:27:18 traceId=6804cc068f8cf5cbdbf8da50fb6026b0 spanId=dbf8da50fb6026b0 INFO  c.e.c.service.CustomerService - Retrieved 3 customers
+2025-04-20 11:28:37 traceId=6804cc5596ef2df0a641d38db8d3d20d spanId=a641d38db8d3d20d INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 11:28:37 traceId=6804cc5596ef2df0a641d38db8d3d20d spanId=a641d38db8d3d20d INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@6404e8ea]
+2025-04-20 11:30:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:31:13 traceId=6804ccf1dde992f5b49c2f34a6e306d1 spanId=b49c2f34a6e306d1 INFO  c.e.c.service.CustomerService - Fetching all customers
+2025-04-20 11:31:13 traceId=6804ccf1dde992f5b49c2f34a6e306d1 spanId=b49c2f34a6e306d1 INFO  c.e.c.service.CustomerService - Retrieved 3 customers
+2025-04-20 11:35:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:40:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:45:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:50:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 11:55:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:00:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:05:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:10:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:15:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:20:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:23:49 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 12:23:49 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@7e86719c ((conn=33) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@568b57ca ((conn=34) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@2845c7bc ((conn=35) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@658259b9 ((conn=36) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@9624d9b ((conn=37) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@55b6e7a ((conn=38) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@325214a ((conn=39) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@749def06 ((conn=40) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6f087a9b ((conn=41) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@317ef1be ((conn=42) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2025-04-20 12:23:50 traceId=6804d9452a3ae5f87d8ab1a35b3dcf94 spanId=7d8ab1a35b3dcf94 INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@2cf5ee25]
+2025-04-20 12:24:16 traceId=6804d960e3234b8781fd89d6d36e0da8 spanId=81fd89d6d36e0da8 INFO  c.e.c.service.CustomerService - Fetching all customers
+2025-04-20 12:24:16 traceId=6804d960e3234b8781fd89d6d36e0da8 spanId=81fd89d6d36e0da8 INFO  c.e.c.service.CustomerService - Retrieved 3 customers
+2025-04-20 12:25:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:27:15 traceId=6804da134162c2fcc5508a432dd9fb65 spanId=c5508a432dd9fb65 INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 12:27:15 traceId=6804da134162c2fcc5508a432dd9fb65 spanId=c5508a432dd9fb65 INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@5f7df852]
+2025-04-20 12:27:30 traceId=6804da2286944b8c7162245833941598 spanId=7162245833941598 INFO  c.e.c.service.CustomerService - Fetching all customers
+2025-04-20 12:27:30 traceId=6804da2286944b8c7162245833941598 spanId=7162245833941598 INFO  c.e.c.service.CustomerService - Retrieved 3 customers
+2025-04-20 12:27:52 traceId=6804da3875e41559aff343895fcdb095 spanId=aff343895fcdb095 INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 12:27:52 traceId=6804da3875e41559aff343895fcdb095 spanId=aff343895fcdb095 INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@42b17a5]
+2025-04-20 12:30:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:35:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:38:14 traceId=6804dca68f1d882f449dd6f5b7e35a25 spanId=449dd6f5b7e35a25 INFO  c.e.c.service.CustomerService - Fetching all customers
+2025-04-20 12:38:14 traceId=6804dca68f1d882f449dd6f5b7e35a25 spanId=449dd6f5b7e35a25 INFO  c.e.c.service.CustomerService - Retrieved 3 customers
+2025-04-20 12:38:15 traceId=6804dca7d7d4aae42fffb3be7d5f0f83 spanId=2fffb3be7d5f0f83 INFO  c.e.c.service.CustomerService - Fetching all customers
+2025-04-20 12:38:15 traceId=6804dca7d7d4aae42fffb3be7d5f0f83 spanId=2fffb3be7d5f0f83 INFO  c.e.c.service.CustomerService - Retrieved 3 customers
+2025-04-20 12:38:16 traceId=6804dca81c3af3056aca02b789163ead spanId=6aca02b789163ead INFO  c.e.c.service.CustomerService - Fetching all customers
+2025-04-20 12:38:16 traceId=6804dca81c3af3056aca02b789163ead spanId=6aca02b789163ead INFO  c.e.c.service.CustomerService - Retrieved 3 customers
+2025-04-20 12:38:53 traceId=6804dccd28e5b1de2557a7422e535e13 spanId=2557a7422e535e13 INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 12:38:53 traceId=6804dccd28e5b1de2557a7422e535e13 spanId=2557a7422e535e13 INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@311a252c]
+2025-04-20 12:39:21 traceId=6804dce931af4dd1beb5df633fdedb5b spanId=beb5df633fdedb5b INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 12:39:21 traceId=6804dce931af4dd1beb5df633fdedb5b spanId=beb5df633fdedb5b INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@3f52071d]
+2025-04-20 12:39:23 traceId=6804dcebf58b5cdd1105534e669c0b03 spanId=1105534e669c0b03 INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 12:39:23 traceId=6804dcebf58b5cdd1105534e669c0b03 spanId=1105534e669c0b03 INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@56aab260]
+2025-04-20 12:40:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:41:17 traceId=6804dd5d42158f7290bd41cd2d578dbc spanId=90bd41cd2d578dbc INFO  c.e.c.service.CustomerService - Fetching customer with ID: 1
+2025-04-20 12:41:17 traceId=6804dd5d42158f7290bd41cd2d578dbc spanId=90bd41cd2d578dbc INFO  c.e.c.service.CustomerService - Customer fetched successfully: Customer [toString()=com.example.customer_service.model.Customer@e627a5c]
+2025-04-20 12:45:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:50:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 12:55:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 13:00:48 traceId= spanId= INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-04-20 13:03:03 traceId= spanId= INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2025-04-20 13:03:03 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1745150583179, current=DOWN, previous=UP]
+2025-04-20 13:03:03 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082: registering service...
+2025-04-20 13:03:03 traceId= spanId= INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-20 13:03:03 traceId= spanId= INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-20 13:03:03 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - registration status: 204
+2025-04-20 13:03:03 traceId= spanId= INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 13:03:03 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-20 13:03:03 traceId= spanId= INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-20 13:03:03 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-20 13:03:06 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-04-20 13:03:06 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/asusvivobook:customer-service:8082 - deregister  status: 200
+2025-04-20 13:03:06 traceId= spanId= INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
