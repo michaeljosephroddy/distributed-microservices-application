@@ -1,4 +1,4 @@
-# Development and Demonstration of a REST API Order Service
+# Development and Demonstration of a REST API Customer Service
 
 1. Implement a scalable REST API adhering to RESTful standards.
 
