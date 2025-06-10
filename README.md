@@ -1,6 +1,6 @@
-# Distributed Microservices Application – Overview
+# Distributed Microservices Application Assignment
 
-This project is focused on building a distributed application using microservices architecture. The main goal is to demonstrate how multiple services can collaborate within a system, using various modern technologies and tools to create a robust and scalable solution.
+This project is focused on building a distributed application using microservices architecture for the Microservices Architecture module. The main goal is to demonstrate how multiple services can collaborate within a system, using various modern technologies and tools to create a robust and scalable solution.
 
 ### Key Components
 
